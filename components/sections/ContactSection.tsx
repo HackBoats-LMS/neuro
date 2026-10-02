@@ -100,7 +100,7 @@ export function ContactSection() {
                 Name
                 <input
                   autoComplete="name"
-                  required=""
+                  required
                   placeholder="Your name"
                   name="name"
                 />
@@ -110,7 +110,7 @@ export function ContactSection() {
                 <input
                   type="email"
                   autoComplete="email"
-                  required=""
+                  required
                   placeholder="you@example.com"
                   name="email"
                 />
@@ -135,7 +135,7 @@ export function ContactSection() {
               <label>
                 I am a
                 <select name="role" defaultValue="">
-                  <option value="" disabled="">
+                  <option value="" disabled>
                     Select one
                   </option>
                   <option>Student</option>
@@ -148,7 +148,7 @@ export function ContactSection() {
               <label>
                 Interested in
                 <select name="interest" defaultValue="">
-                  <option value="" disabled="">
+                  <option value="" disabled>
                     Select one
                   </option>
                   <option>Student Evolution Journey</option>
@@ -163,7 +163,7 @@ export function ContactSection() {
               Message
               <textarea
                 name="message"
-                rows="4"
+                rows={4}
                 placeholder="Tell us what you would like to explore"
               ></textarea>
             </label>
